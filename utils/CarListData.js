@@ -1,0 +1,42 @@
+export const CarListData = [
+  {
+    id: 1,
+    name: "UberX",
+    seat: 4,
+    desc: "Affordable,Everyday rides",
+    amount: 1.1,
+    image: "/UberX.png",
+  },
+  {
+    id: 2,
+    name: "Comfort",
+    seat: 4,
+    desc: "Newer cars with extra legroom",
+    amount: 1.16,
+    image: "/UberComfort.png",
+  },
+  {
+    id: 3,
+    name: "UberXL",
+    seat: 6,
+    desc: "Affordable rides for groups up to 6",
+    amount: 1.9,
+    image: "/UberXL.png",
+  },
+  {
+    id: 4,
+    name: "UberPet",
+    seat: 2,
+    desc: "Comfortable rides with your pet",
+    amount: 1.9,
+    image: "/UberPet.png",
+  },
+  {
+    id: 5,
+    name: "UberBlack",
+    seat: 4,
+    desc: "Premium rides in luxury cars",
+    amount: 1.9,
+    image: "/UberBlack.png",
+  },
+];
