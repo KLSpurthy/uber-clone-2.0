@@ -15,7 +15,7 @@ export async function POST(request: any) {
       currency: "cad",
     });
 
-    return NextResponse.json(paymentIntent.client_secret, { status: 200 });
+    return NextResponse.json(paymentIntent.client_secret, { status: 2000});
   } catch (error: any) {
     return new NextResponse(error, {
       status: 400,

@@ -8,7 +8,12 @@ import React from "react";
 
 function Payment() {
   const searchParam = useSearchParams();
-  const amount = searchParam.get("amount");
+  let amount = parseFloat(searchParam.get("amount"));
+  if (isNaN(amount) || amount <= 0)
+  {
+    console.error("Invalid amount value.Amount must be a number greater than 0.");
+    amount = 1
+  }
   const stripePromise = loadStripe(
     process.env.NEXT_PUBLIC_STRIPE_PUBLISHER_KEY
   );
